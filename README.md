@@ -7,6 +7,7 @@ Quick&dirty driver for the PS3 uDraw graphics tablet. If customization
 is needed, hack the source.
 
 For a Windows driver, see: http://brandonw.net/udraw/
+
 For a Linux driver, see: https://github.com/TheSandBoxMKG/udraw-driver
 
 
