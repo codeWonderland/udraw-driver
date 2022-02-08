@@ -1,12 +1,13 @@
 [![Build Status](https://travis-ci.org/Grumbel/udraw.svg?branch=master)](https://travis-ci.org/Grumbel/udraw)
 
-uDraw PS3 Linux Driver
+uDraw PS3 MacOS Driver
 ======================
 
 Quick&dirty driver for the PS3 uDraw graphics tablet. If customization
 is needed, hack the source.
 
 For a Windows driver, see: http://brandonw.net/udraw/
+For a Linux driver, see: https://github.com/TheSandBoxMKG/udraw-driver
 
 
 Requirements:
