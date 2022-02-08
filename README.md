@@ -13,19 +13,13 @@ For a Linux driver, see: https://github.com/TheSandBoxMKG/udraw-driver
 
 Requirements:
 -------------
-* cmake
 * git
-* libusb
-* boost
+* homebrew
+* cmake (brew)
+* pkg-config (brew)
+* libusb (brew)
+* boost (brew)
 * g++
-
-
-MacOS Additional Instructions:
-------------
-Install Homebrew
-
-    brew install pkg-config
-    brew install libusb
 
 
 Compilation:
