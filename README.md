@@ -18,6 +18,14 @@ Requirements:
 * g++
 
 
+MacOS Additional Instructions:
+------------
+Install Homebrew
+
+    brew install pkg-config
+    brew install libusb
+
+
 Compilation:
 ------------
 
