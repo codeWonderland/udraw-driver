@@ -37,7 +37,18 @@ endif()
 
 find_package(Threads REQUIRED)
 find_package(PkgConfig REQUIRED)
-pkg_search_module(USB REQUIRED libusb)
+
+# This is how we'd search on linux
+# pkg_search_module(USB REQUIRED libusb)
+
+set(MACLIBPATH "/$(pkg-config --cflags libusb-1.0 | sed 's/-I*.//' | sed 's/include/libusb-.*//')")
+
+include_directories("${MACLIBPATH}include")
+link_directories("${MACLIBPATH}lib")
+
+file(GLOB LIBRARIES "${MACLIBPATH}lib/*dylib")
+
+# target_link_libraries(libusb ${LIBRARIES})
 
 add_executable(udraw-driver udraw-driver.cpp)
 target_compile_options(udraw-driver PRIVATE ${WARNINGS_CXX_FLAGS})
